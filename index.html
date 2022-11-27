@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#b12a3a">
+    <link rel="stylesheet icon" href="icons/icon-32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BookLife</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="manifest" href="manifest.webmanifest">
+    <script src="app.js"></script>
+  </head>
+
+
+  <body>
+<!--Encabezado-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Menú</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="destacados.html">Destacados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="autores.html">Autores</a>
+            </li>
+          </ul>
+          <!--Buscar-->
+          <button class="btn btn-dark" type="submit">Buscar</button>
+          &nbsp;
+           <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+            </form>
+          <!--Fin buscar-->
+          
+        </div>
+      </div>
+    </nav>
+   
+
+    <div class="container">
+      <!--Carrusel-->
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="icons/fondo1.jpg" class="d-block w-100" height="150px">
+          </div>
+        </div>
+      </div>
+      <!--Bienvenida-->
+      <div class="row">
+        <div class="col"><h1 class="text-center" >Bienvenido a BookLife</h1></div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <p>BookLife es una biblioteca con más de 60.000 libros,para leer en tu teléfono, tablet o ebook reader.
+          Consulta libros gratis y de forma legal.</p>
+        </div>
+      </div>
+  
+      <!-- 3 Cards-->
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="icons/Hitler.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Los hornos de hittler</h5>
+              <p class="card-text">Una sobreviviente de los campos de concentración de Auschwitz y de Birkenau.</p>
+              <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="icons/theduff.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">The duff</h5>
+              <p class="card-text">Bianca, de 17 años, sabe perfectamente que no es la más guapa de sus amigas. </p>
+              <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="icons/siempre.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nunca digas siempre</h5>
+              <p class="card-text">Ella aprendió que el silencio era su mejor arma.
+                Él juró que siempre la protegería.</p>
+              <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+
+      <!--3 cards-->
+      <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="icons/tomorrow.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Tal vez mañana</h5>
+                <p class="card-text">A los veintidós años, Sydney lo tiene todo: el novio perfecto, un futuro brillante y un bonito apartamento que comparte con su mejor amiga.</p>
+                <a href="#" class="btn btn-primary">Leer más</a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="icons/sisters.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Sisters</h5>
+                <p class="card-text">A veces sentía que éramos una fuerza de la naturaleza. En ese momento éramos como un poderoso golpe de viento a punto de destruir una ciudad</p>
+                <a href="#" class="btn btn-primary">Leer más</a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="icons/amalia.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Cosas que piensas cuando te muerdes la uñas</h5>
+                <p class="card-text">La ansiedad es un monstruo y Amalia Andrade sabe cómo derrotarlo. Un libro testimonial </p>
+                <a href="#" class="btn btn-primary">Leer más</a>
+              </div>
+            </div>
+          </div>
+
+          <br>
+          
+        </div>
+        <br>
+
+        <div class="row text-center">
+          <div class="col">
+            <a id="instalar" class="btn btn-dark" href="#"> Instalar Aplicación </a>
+            <a id="instalarNotificaciones" class="btn btn-dark" href="#">Recibir Notificaciones</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <br>
+    <script src="js/bootstrap.js" ></script>
+
+    <script>
+      //Instalar
+      let eventoPrompt;
+    
+    window.addEventListener('beforeinstallprompt',
+     function(e){
+      e.preventDefault();
+      eventoPrompt = e;
+    });
+    
+    btnInstalar = document.getElementById("instalar");
+    if (eventoPrompt==null) 
+    {
+      btnInstalar.style.display='none';
+    }else{
+        btnInstalar.addEventListener('click', (e) =>{
+        btnInstalar.style.display='none';
+        eventoPrompt.prompt();
+        eventoPrompt.userChoice.then((choiceResult)=>{
+          if(choiceResult.outcome==='accepted'){
+          console.log("El usuario instalo la app");
+          }else{
+            console.log("El usuario rechazo la instalacion");
+          }
+          eventoPrompt=null;
+        });
+    });
+  }
+
+
+      //Notificaciones
+      let botonNotificaciones = document.getElementById("instalarNotificaciones");
+      botonNotificaciones.addEventListener('click',function(e){
+       Notification.requestPermission().then(function(result){
+        if(result==='granted'){
+          randomNotifiacion();
+        }
+       }) ;
+      });
+
+      function randomNotifiacion(){
+        let nTitle="Titulo Prueba Notificacion";
+        let nbody="Hola esta es una notificación random de prueba ";
+        let nImage="./icons/icon-32.png";
+        let options={
+            body:nbody,
+            icon:nImage
+
+        }
+        let notif= new Notification(nTitle,options);
+        setTimeout(randomNotifiacion,10000);
+      }
+    </script>
+  </body>
+</html>
