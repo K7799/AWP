@@ -146,7 +146,7 @@
 
         <div class="row text-center">
           <div class="col">
-            <a id="instalar" class="btn btn-dark" href="#"> Instalar Aplicación </a>
+            <a id="instalar" class="btn btn-dark" href="#">Inst App</a>
             <a id="instalarNotificaciones" class="btn btn-dark" href="#">Recibir Notificaciones</a>
           </div>
         </div>
@@ -159,31 +159,23 @@
     <script>
       //Instalar
       let eventoPrompt;
-    
-    window.addEventListener('beforeinstallprompt',
-     function(e){
-      e.preventDefault();
-      eventoPrompt = e;
-    });
-    
-    btnInstalar = document.getElementById("instalar");
-    if (eventoPrompt==null) 
-    {
-      btnInstalar.style.display='none';
-    }else{
-        btnInstalar.addEventListener('click', (e) =>{
-        btnInstalar.style.display='none';
+      window.addEventListener('beforeinstallprompt', function(e){
+        e.preventDefault();
+        eventoPrompt= e;
+      });
+        btnInstalar= document.getElementById("instalar");
+        btnInstalar.addEventListener('click', (e)=>{
+          btnInstalar.style.display='none';
         eventoPrompt.prompt();
         eventoPrompt.userChoice.then((choiceResult)=>{
           if(choiceResult.outcome==='accepted'){
-          console.log("El usuario instalo la app");
+            console.log('El usuario instalo la app');
           }else{
-            console.log("El usuario rechazo la instalacion");
+            console.log('El usuario rechazo la instalacion');
           }
           eventoPrompt=null;
         });
-    });
-  }
+      });
 
 
       //Notificaciones
